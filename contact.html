@@ -4,162 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="/image/Icon-05.png">
     <title>Contact</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .contact{
-            position: relative;
-            min-height: 100vh;
-            padding: 50px 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background: url(./image/background.jpg);
-            background-size: cover;
-        }
-        .contact .content{
-            max-width: 800px;
-            text-align: center;
-        }
-        .contact .content h2{
-            font-size: 36px;
-            font-weight: 500;
-            color: #fff;
-        }
-        .contact .content p{
-            font-weight: 300;
-            color: #fff;
-        }
-        .container{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
-        }
-        .container .contactinfo{
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-        }
-        .container .contactinfo .box{
-            position: relative;
-            padding: 20px 0;
-            display: flex;
-        }
-        .container .contactinfo .box .icon{
-            min-height: 60px;
-            height: 60px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            border-radius: 50%;
-            font-size: 40px;
-            padding: 10px;
-        }
-        .container .contactinfo .box .text{
-            display: flex;
-            margin-left: 20px;
-            font-size: 16px;
-            color: #fff;
-            flex-direction: column;
-            font-weight: 300;
-        }
-        .container .contactinfo .box .text h3{
-            font-weight: 500;
-            color: #00bcd4;
-        }
-        .contactform{
-            width: 40%;
-            padding: 40px;
-            background: #fff;
-        }
-        .contactform h2{
-            font-size: 30px;
-            color: #333;
-            font-weight: 500;
-        }
-        .contactform .inputbox{
-            position: relative;
-            width: 100%;
-            margin-top: 10px;
-        }
-        .contactform .inputbox input,
-        .contactform .inputbox textarea{
-            width: 100%;
-            padding: 5px 0;
-            font-size: 16px;
-            margin: 10px 0;
-            border: none;
-            border-bottom: 2px solid #333;
-            outline: none;
-            resize: none;
-        }
-        .contactform .inputbox span{
-            position: absolute;
-            left: 0;
-            padding: 5px 0;
-            font-size: 16px;
-            margin: 10px 0;
-            pointer-events: none;
-            transition: 0.5s;
-            color: #666;
-        }
-        .contactform .inputbox input:focus ~ span,
-        .contactform .inputbox input:valid ~ span,
-        .contactform .inputbox textarea:focus ~ span,
-        .contactform .inputbox textarea:valid ~ span{
-            color: #e91e63;
-            font-size: 12px;
-            transform: translateY(-20px);
-        }
-        .contactform .inputbox input[type="Submit"]{
-            width: 100px;
-            background: #00bcd4;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            font-size: 18px;
-        }
-        @media (max-width:991px){
-            .contact{
-                padding: 50px;
-            }
-            .container{
-                flex-direction: column;
-            }
-            .container .contactinfo, .contactform{
-                margin-bottom: 40px;
-                width: 100%;
-            }
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="/bootstrap-5.0.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section class="contact">
-        <div class="content"> 
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quidem nam alias illum temporibus architecto perspiciatis nobis iure deleniti magnam officiis consequuntur, illo rerum, iusto earum libero laborum tenetur aspernatur! Praesentium, aliquid placeat. Obcaecati perferendis culpa, rem nobis necessitatibus dolorem, dicta reiciendis libero tempore deleniti ratione, ea debitis magnam! Quasi.</p>
-        </div> 
+    <!-- header part start -->
+    <div id="header">
         <div class="container">
-            <div class="contactinfo">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo">AceHaverS@ck</h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/About.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- header part end -->
+
+    <!-- contact part start -->
+
+    <div class="container-fluid contact">
+        <div class="row content">
+            <div class="col-md-12">
+                <h2>Contact us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium molestias veritatis vero corporis illum asperiores aut deleniti repudiandae maiores quam ducimus iusto, culpa tempora numquam iure, et suscipit! Delectus odio temporibus vitae laboriosam nisi voluptatum sed dolorum tenetur explicabo, eaque exercitationem incidunt? Aspernatur, distinctio. Mollitia exercitationem perspiciatis vel odio!</p>
+            </div>
+        </div>
+        <div class="row cont">
+            <div class="col-md-6 contactinfo">
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
-                    <div class="text">
+                    <div class="text-1">
                         <h3>Address</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, possimus.</p>
                     </div>
@@ -168,7 +55,7 @@
                     <div class="icon">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </div>
-                    <div class="text">
+                    <div class="text-1">
                         <h3>E-mail</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, possimus.</p>
                     </div>
@@ -177,13 +64,13 @@
                     <div class="icon">
                         <i class="fa fa-phone-square" aria-hidden="true"></i>
                     </div>
-                    <div class="text">
+                    <div class="text-1">
                         <h3>Phone</h3>
                         <p>1234567890</p>
                     </div>
                 </div>
             </div>
-            <div class="contactform">
+            <div class="col-md-6 contactform">
                 <form> 
                     <h2>Send Message</h2>
                     <div class="inputbox">
@@ -204,6 +91,9 @@
                 </form>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- contact part end -->
+    
 </body>
 </html>
