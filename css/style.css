@@ -8,10 +8,11 @@
 
 #header{
     color: #ffffff;
-    background: #cc0066;
+    background: #f45d32;
+    height: 52.5px;
 }
 #logo{
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 3px;
 }
 #menu{
@@ -25,14 +26,18 @@
 }
 #menu li a{
     color: white;
-    font-size: 20px;
-    padding: 18px 10px;
+    font-size: 22px;
+    padding: 8.5px 10px;
     text-decoration: none;
     display: block;
 }
 #menu li a:hover{
-    background: #99004d;
+    background: #c72d02;
 }
+.active, .btn:hover {
+    background-color: #c72d02;
+    color: white;
+  }
 #banner{
     background: url(../image/AceS@ck-01.jpg) no-repeat 0 0;
     background-size: cover;
@@ -48,31 +53,25 @@
     padding: 10px;
     margin: 0;
 }
-/* .banner-title p.lead{
-    color: #fff;
-    font-size: 15px;
-    background: #ff66b3;
-    padding: 10px;
-} */
-
 /* Header Styling End */
 
 
 /* Some Extra Styling Start  */
-
 .some{
     width: 100%;
     height: auto;
-    margin: 0px;
-    margin-top: 30px;
     margin-bottom: 30px;
-    background-color: rgb(231, 226, 231);
+}
+.some h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 500;
 }
 .container-123 {
     position: relative;
-    width: 15%;
     float: left;
-    margin: 12px;
+    margin-left: 0px;
 }
   
 .image {
@@ -91,7 +90,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:  #ff66b3;
+    background-color:  #ff9647;
 }
   
 .container-123:hover .overlay {
@@ -106,7 +105,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: transparent;
     padding: 5px;
-    font-size: 22px;
+    font-size: 15px;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -114,23 +113,33 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    border: 0px solid #cc0066;
+    border: 2px solid #f45d32;
     text-align: center;
 } 
 .button:hover{
     color: #fff;
-    background-color:#99004d;
+    background-color:#c72d02;
     transition: 0.3s;
 }
 .text{
-    color: wheat;
-    font-size: 25px;
-    position: absolute;
-    padding: 10px;
-    top: 20%;
-    left: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+@media (max-width: 360px){
+    .text{
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    .container-123{
+        height: 400px;
+    }
 }
 
 /* Some Extra Styling End */
@@ -145,7 +154,7 @@
     height: 100%;
 }
 .some-1 h2{
-    background: #ff66b3;
+    background: #f45d32;
     color: #fff;
     font-size: 24px;
     padding: 10px;
@@ -171,18 +180,201 @@ img{
     padding-bottom: 1px;
 }
 
+.main1{
+    width: 100%;
+    /* margin-left: 100px;
+    padding: 0; */
+}
+.sell{
+    width: 100%;
+    margin-left: 35px;
+}
+.box1{
+    border: 2px solid #f45d32;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+}
+.content1{
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: auto;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.7s;
+    overflow: hidden;
+}
+.box1:hover .content1{
+    top: 0;
+}
+.content1 h3{
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1px solid #f45d32;
+    text-transform: uppercase;
+    padding: 0px;
+}
+.content1 p {
+    letter-spacing: 0;
+    font-size: 11px; 
+    font-family: sans-serif;
+    border-bottom: 1px solid #f45d32;
+    letter-spacing: 0.5px;
+} 
+
 /* Sell Styling End */
 
 
-/* Footer Styling Start */
+/* Contact Styling Start */
 
-.size, h4, p, b{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+.center{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px 0 400px;
 }
+
+.box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.box .icon{
+    min-height: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 6px;
+}
+.box .text-1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+}
+.box .text-1 h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+@media (max-width: 768px){
+    .center {
+        padding: 25px 50px 0 200px;
+    }
+}
+@media (max-width: 425px){
+    .center {
+        padding: 15px 25px 0 60px;
+    }
+}
+@media (max-width: 360px){
+    .center {
+        padding: 15px 25px 0 40px;
+    }
+}
+
+
+
+/* HighLight Part Styling Start */
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .show {
+    position: relative;
+    width: 40%;
+    height: 50%;
+    margin: 0px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #f45d32;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #ff7048;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+   
+  .box2{
+      width: 100%;
+  }
+  .info{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 50px;
+  }
+  .info h1{
+      font-size: 35px;
+      font-weight: 400;
+  }
+  .info p{
+      font-size: 20px;
+      margin-top: 30px;
+  }
+  .info h3{
+      font-size: 25px;
+      color: #f45d32;
+  }
+
+/* HighLight Part Styling End */
+
+
+
+/* Footer Styling Start */
 #footer-sidebar{
     color: #fff;
-    background: #cc0066;
+    background: #f45d32;
     padding: 20px 0;
 }
 .footer-widget h4::after{
@@ -195,8 +387,14 @@ img{
 }
 .footer-widget a{
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
     text-decoration: none;
+}
+.footer-widget h4{
+    font-size: 15px;
+}
+.footer-widget p{
+    font-size: 12px;
 }
 .latest-news{
     list-style: none;
@@ -204,17 +402,22 @@ img{
     padding: 0;
 }
 .latest-news li{
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 #footer{
     color: #fff;
-    background: #99004d;
-    padding: 10px 0;
+    background: #f45d32;
+    padding: 5px;
+    text-align: right;
+}
+#footer .size{
+    font-size: 15px;
+    font-weight: 100;
 }
 #social-icons{
     list-style: none;
-    float: right;
+    text-align: left;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -226,7 +429,7 @@ img{
 #social-icons li a{
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 @media(max-width: 992px){
@@ -265,308 +468,3 @@ img{
 }
 
 /* Footer Styling End */
-
-
-/* About Styling start */
-
-.about-section {
-   height: 90.5vh;
-   padding: 50px;
-   text-align: center;
-   background-image: url(../image/Backpack.jpg);
-   background-size: cover;
-   background-color: #313840;
-   color: black;
-}
-
-.about-section h1{
-    font-size: 45px;
-    font-weight: 500px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 50px;
-}
-
-.about-section p{
-    font-size: 35px;
-    font-weight: 200px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-}
-
-/* About Styling End */
-
-/* Contact Styling Start */
-
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: url(../image/back-1.jpg);
-    background-size: cover;
-}
-.contact .content{
-    text-align: center;
-}
-.contact .content h2{
-    font-size: 36px;
-    font-weight: 500;
-    color: #fff;
-}
-.contact .content p{
-    font-weight: 300;
-    color: #fff;
-}
-.cont{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.cont .contactinfo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.cont .contactinfo .box{
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-.cont .contactinfo .box .icon{
-    min-height: 40px;
-    height: 40px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 30px;
-    padding: 6px;
-}
-.cont .contactinfo .box .text-1{
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-.cont .contactinfo .box .text-1 h3{
-    font-weight: 500;
-    color: #00bcd4;
-}
-.contactform{
-    width: 40%;
-    padding: 40px;
-    background: #fff;
-}
-.contactform h2{
-    font-size: 30px;
-    color: #333;
-    font-weight: 500;
-}
-.contactform .inputbox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-.contactform .inputbox input,
-.contactform .inputbox textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-    resize: none;
-}
-.contactform .inputbox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-}
-.contactform .inputbox input:focus ~ span,
-.contactform .inputbox input:valid ~ span,
-.contactform .inputbox textarea:focus ~ span,
-.contactform .inputbox textarea:valid ~ span{
-    color: #e91e63;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-.contactform .inputbox input[type="Submit"]{
-    width: 100px;
-    background: #00bcd4;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
-@media (max-width:991px){
-    .contact{
-        padding: 50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactinfo, .contactform{
-        margin-bottom: 40px;
-        width: 100%;
-    }
-
-}
-
-
-.main1{
-    width: 100%;
-    /* margin-left: 100px;
-    padding: 0; */
-}
-.sell{
-    width: 100%;
-    margin: 30px;
-}
-.box1{
-    border: 2px solid grey;
-    height: 280px;
-    position: relative;
-    overflow: hidden;
-    float: left;
-    margin: 10px;
-}
-.box1 img{
-    width: 100%;
-    height: 100%;
-}
-.content1{
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: auto;
-    height: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-    transition: all 0.7s;
-    overflow: hidden;
-}
-.box1:hover .content1{
-    top: 0;
-}
-.content1 h3{
-    font-size: 18px;
-    text-align: center;
-    border-bottom: 1px solid #ff66b3;
-    text-transform: uppercase;
-    padding: 0px;
-}
-.content1 p {
-    letter-spacing: 0;
-    font-size: 15px;
-    border-bottom: 1px solid #ff66b3;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* HighLight Part Styling Start */
-
-.mySlides img {
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  .show {
-    position: relative;
-    width: 40%;
-    height: 50%;
-    margin: 0px;
-  
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  .cursor {
-    cursor: pointer;
-  }
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: #99004d;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: #cc0066;
-  }
-  
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-   
-  .box2{
-      width: 100%;
-  }
-  .info{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin: 50px;
-  }
-  .info h1{
-      font-size: 45px;
-      font-weight: 400;
-  }
-  .info p{
-      font-size: 20px;
-      margin-top: 30px;
-  }
-  .info h3{
-      font-size: 25px;
-      color: pink;
-  }
-
-/* HighLight Part Styling End */
