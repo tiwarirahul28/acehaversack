@@ -6,43 +6,42 @@
 
 /* Header Styling Start */
 
-#header{
+#header {
     color: #ffffff;
     background: #f45d32;
-    height: 52.5px;
 }
-#logo{
-    font-size: 40px;
-    margin-top: 3px;
+#logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    /* margin-top: 2px; */
 }
 #menu{
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     float: right;
 }
+
 #menu li{
     display: inline-block;
 }
 #menu li a{
     color: white;
-    font-size: 22px;
-    padding: 8.5px 10px;
+    font-size: 24px;
+    padding: 8px 8px;
     text-decoration: none;
     display: block;
 }
 #menu li a:hover{
     background: #c72d02;
 }
-.active, .btn:hover {
-    background-color: #c72d02;
-    color: white;
-  }
 #banner{
     background: url(../image/AceS@ck-01.jpg) no-repeat 0 0;
     background-size: cover;
     height: 100vh;
     width: 100%;
+    margin-bottom: 20px;
 }
 .banner-title{
     padding-top: 3rem;
@@ -189,6 +188,13 @@ img{
     width: 100%;
     margin-left: 35px;
 }
+@media (max-width: 600px){
+    .sell{
+        width: 100%;
+        margin-left: -10px;
+    }
+
+}
 .box1{
     border: 2px solid #f45d32;
     height: 250px;
@@ -207,7 +213,7 @@ img{
     position: absolute;
     top: -100%;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 100%;
     padding: 5px;
     box-sizing: border-box;
