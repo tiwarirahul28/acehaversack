@@ -514,5 +514,11 @@ img{
         margin-right: 32px;
     }
 }
+@media (min-width: 320px){
+    #menu li a{
+        text-align: center;
+        margin-right: 18px;
+    }
+}
 
 
