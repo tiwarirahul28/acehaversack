@@ -192,7 +192,7 @@ img{
     .sell{
         width: 100%;
         margin-left: -10px;
-        padding: 15px;
+        padding: 10px;
     }
 
 }
@@ -290,10 +290,30 @@ img{
     .center {
         padding: 15px 25px 0 60px;
     }
+    .box1{
+        height: 450px;
+        width: auto;
+    }
+    .content1 h3{
+        font-size: 16px;
+    }
+    .content1 p{
+        font-size: 14px;
+    }
 }
 @media (max-width: 360px){
     .center {
         padding: 15px 25px 0 40px;
+    }
+    .box1{
+        height: 400px;
+        width: auto;
+    }
+    .content1 h3{
+        font-size: 16px;
+    }
+    .content1 p{
+        font-size: 14px;
     }
 }
 
