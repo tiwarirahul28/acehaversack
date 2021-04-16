@@ -480,8 +480,7 @@ img{
         font-size: 14px;
     }
     #menu li a{
-        text-align: center;
-        margin-right: 50px;
+    margin-left: 64px;
     }
 }
 
