@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* Header Styling Start */
 
 #header {
@@ -29,7 +32,7 @@
 #menu li a{
     color: white;
     font-size: 24px;
-    padding: 8px 8px;
+    padding: 10px 8px;
     text-decoration: none;
     display: block;
 }
@@ -440,10 +443,6 @@ img{
     #social-icons{
         margin-top: 10px;
     }
-    .sell{
-        margin-left: -12px;
-        align-items: center;
-    }
 }
 
 @media (max-width: 600px){
@@ -451,6 +450,15 @@ img{
         width: 100%;
         margin-left: -10px;
         padding: 10px;
+    }
+    #menu li a{
+        display: inline-block;
+        text-align: center;
+        margin-left: 7px;
+    }
+    .box1{
+        height: 450px;
+        width: auto;
     }
 
 }
@@ -465,7 +473,7 @@ img{
     }
 }
 
-@media (min-width: 425px){
+@media (max-width: 411px){
     .center {
         padding: 15px 25px 0 60px;
     }
@@ -480,11 +488,15 @@ img{
         font-size: 14px;
     }
     #menu li a{
-    margin-left: 64px;
+        margin-right: -50px;
     }
 }
-
-@media (min-width: 360px){
+@media(max-width:520px){
+    #menu li a{
+        margin-right: 80px;
+    }
+}
+@media (max-width: 360px){
     .center {
         padding: 15px 25px 0 40px;
     }
@@ -511,12 +523,6 @@ img{
     #menu li a{
         text-align: center;
         margin-right: 32px;
-    }
-}
-@media (min-width: 320px){
-    #menu li a{
-        text-align: center;
-        margin-right: 18px;
     }
 }
 
