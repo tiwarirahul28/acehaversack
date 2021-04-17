@@ -493,7 +493,7 @@ img{
 }
 @media(max-width:520px){
     #menu li a{
-        margin-right: 80px;
+        margin-right: 40px;
     }
 }
 @media (max-width: 360px){
