@@ -491,6 +491,15 @@ img{
         margin-right: 50px;
     }
 }
+@media (max-width: 460px){
+    .center{
+        padding: 15px 25px 0 60px;
+    }
+    #menu li a{
+        margin-right: 50px;
+    }
+}
+
 @media(max-width: 520px){
     #menu li a{
         margin-right: 50px;
