@@ -39,7 +39,7 @@
 header{
     z-index: 999;
     position: fixed;
-    background: #c0c0c0;
+    background: #ff9647;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,22 +56,26 @@ header.sticky{
 }
   
 header .brand{
-    color: #000;
+    float: left;
+    color: #fff;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
 }
-
+header .tag-line{
+    color: #fff;
+    font-size: 14px;
+}
 header .navigation{
     position: relative;
 }
   
 header .navigation a{
-    color: #000;
+    color: #fff;
     font-size: 16px;
     font-weight: normal;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 header .navigation a:hover{
@@ -121,7 +125,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: url(/image) no-repeat;
+    background: url(/image/AceS@ck-01.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -661,7 +665,7 @@ img{
     header .navigation.active{
       z-index: 888;
       position: fixed;
-      background: #fff;
+      background: #f45d32;
       top: 0;
       right: 0;
       width: 380px;
@@ -675,17 +679,18 @@ img{
     }
   
     header .navigation a{
-      color: #000;
+      color: #fff;
       font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
       margin: 10px;
       padding: 0 20px;
       border-radius: 20px;
     }
   
     header .navigation a:hover{
-      background: #f45d32;
-      color: #fff;
-      transition: 0.3s ease;
+      background: #fff;
+      color: #000;
+      transition: 0.2s ease;
     }
   
     .menu-btn{
