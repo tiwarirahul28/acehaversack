@@ -1,60 +1,152 @@
 *{
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    scroll-behavior: smooth;
+    font-weight: normal;
+    transition: all .3s cubic-bezier(.16,.8,.62,1.52);
+    text-decoration: none;
+    outline: none;
+    border:none;
+}
+
+.scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: #f45d32;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+  
+.scrollToTop-btn.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+}
+  
+header{
+    z-index: 999;
+    position: fixed;
+    background: #c0c0c0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+  
+header.sticky{
+    background: #f45d32;
+    padding: 10px 170px;
+}
+  
+header .brand{
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+  
+header .navigation a{
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+header .navigation a:hover{
+    color: #f45d32;
+}
+  
+header.sticky .navigation a:hover{
+    color: #fff;
+}
+
+
+*::selection{
+    background: #f45d32;
+    color:#fff;
 }
 
 html{
-    scroll-behavior: smooth;
-}
-/* Header Styling Start */
-
-#header {
-    color: #ffffff;
-    background: #f45d32;
-}
-#logo a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 35px;
-    /* margin-top: 2px; */
-}
-#menu{
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    float: right;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-#menu li{
-    display: inline-block;
+body{
+    overflow-x: hidden;
 }
-#menu li a{
-    color: white;
-    font-size: 24px;
-    padding: 10px 8px;
-    text-decoration: none;
-    display: block;
+
+html::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 10%;
 }
-#menu li a:hover{
-    background: #c72d02;
+
+html::-webkit-scrollbar-track{
+    background:#000;
 }
-#banner{
-    background: url(../image/AceS@ck-01.jpg) no-repeat 0 0;
+
+html::-webkit-scrollbar-thumb{
+    background: #e62429;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 7%;
+    padding-top: 100px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url(/image) no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
     margin-bottom: 20px;
 }
-.banner-title{
-    padding-top: 3rem;
+
+.home .image{
+    flex: 1 1 640px;
 }
-.banner-title h1{
-    background: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    padding: 10px;
-    margin: 0;
+
+.home .image img{
+    width: 100%;
 }
+
+.home .content{
+    flex:1 1 40rem;
+    padding: 64px 0;
+}
+
+.home .content h3{
+    color: #f45d32;
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+
 /* Header Styling End */
 
 
@@ -146,8 +238,8 @@ html{
 .some-1 h2{
     background: #f45d32;
     color: #fff;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 8px;
     height: 40px;
 }   
 .product-top{
@@ -233,7 +325,7 @@ img{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 50px 100px 0 400px;
+    padding: 100px 100px 0 400px;
 }
 
 .box{
@@ -465,7 +557,7 @@ img{
 
 @media (max-width: 768px){
     .center {
-        padding: 25px 50px 0 200px;
+        padding: 75px 50px 0 200px;
     }
     #menu li a{
         text-align: center;
@@ -475,7 +567,7 @@ img{
 
 @media (max-width: 414px){
     .center {
-        padding: 15px 25px 0 60px;
+        padding: 75px 25px 0 60px;
     }
     .box1{
         height: 450px;
@@ -493,7 +585,7 @@ img{
 }
 @media (max-width: 460px){
     .center{
-        padding: 15px 25px 0 60px;
+        padding: 75px 25px 0 60px;
     }
     #menu li a{
         margin-right: 50px;
@@ -507,7 +599,7 @@ img{
 }
 @media (max-width: 360px){
     .center {
-        padding: 15px 25px 0 40px;
+        padding: 85px 25px 0 40px;
     }
     .box1{
         height: 400px;
@@ -535,4 +627,87 @@ img{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1040px){
+    header{
+      padding: 12px 20px;
+    }
+  
+    header.sticky{
+      padding: 10px 20px;
+    }
+  
+    header .navigation{
+      display: none;
+    }
+  
+    header .navigation.active{
+      z-index: 888;
+      position: fixed;
+      background: #fff;
+      top: 0;
+      right: 0;
+      width: 380px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+      transition: 0.3s ease;
+    }
+  
+    header .navigation a{
+      color: #000;
+      font-size: 20px;
+      margin: 10px;
+      padding: 0 20px;
+      border-radius: 20px;
+    }
+  
+    header .navigation a:hover{
+      background: #f45d32;
+      color: #fff;
+      transition: 0.3s ease;
+    }
+  
+    .menu-btn{
+      position: absolute;
+      background: url(/image/menu.png)no-repeat;
+      background-size: 30px;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      right: 0;
+      margin: 0 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+  
+    .menu-btn.active{
+      z-index: 999;
+      background: url(/image/close.png)no-repeat;
+      background-size: 25px;
+      background-position: center;
+      transition: 0.3s ease;
+      filter: invert(1);
+    }
+}
 
