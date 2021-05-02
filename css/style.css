@@ -39,7 +39,7 @@
 header{
     z-index: 999;
     position: fixed;
-    background: #ff9647;
+    background: #ff974752;
     top: 0;
     left: 0;
     width: 100%;
@@ -125,7 +125,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: url(/image/AceS@ck-01.jpg) no-repeat;
+    background: url(/image/glow.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -358,13 +358,13 @@ img{
 }
 .box .text-1 h3{
     font-weight: 500;
-    color: #00bcd4;
+    color: #f45d32;
 }
 
 
 /* HighLight Part Styling Start */
 
-.mySlides img {
+/* .mySlides img {
     vertical-align: middle;
     width: 100%;
   }
@@ -436,7 +436,7 @@ img{
   .info h3{
       font-size: 25px;
       color: #f45d32;
-  }
+  } */
 
 /* HighLight Part Styling End */
 
@@ -506,9 +506,24 @@ img{
 
 
 
-@media(max-width: 992px){
+@media(max-width: 991px){
     .news-post{
         margin-bottom: 30px;
+    }
+    html{
+            font-size: 55%;
+    }
+    .center{
+        padding: 100px 100px 100px 250px;
+    }
+    .box1{
+        height: 300px;
+        width: 30%;
+    }
+    .sell{
+        width: 100%;
+        margin-left: -0px;
+        padding: 10px;
     }
 }
 
@@ -539,7 +554,21 @@ img{
     #social-icons{
         margin-top: 10px;
     }
+    .center {
+        padding: 75px 50px 0 200px;
+    }
+    .box1{
+        height: 250px;
+        width: 40%;
+        justify-content: center;
+    }
+    .sell{
+        width: 100%;
+        margin-left: 27px;
+        padding: 10px;
+    }
 }
+
 
 @media (max-width: 600px){
     .sell{
@@ -553,29 +582,20 @@ img{
         margin-left: 7px;
     }
     .box1{
-        height: 450px;
-        width: auto;
+        height: 300px;
+        width: 46%;
     }
 
 }
 
-@media (max-width: 768px){
-    .center {
-        padding: 75px 50px 0 200px;
-    }
-    #menu li a{
-        text-align: center;
-        margin-top: 7px;
-    }
-}
 
-@media (max-width: 414px){
+@media (max-width: 400px){
     .center {
         padding: 75px 25px 0 60px;
     }
     .box1{
         height: 450px;
-        width: auto;
+        width: 80%;
     }
     .content1 h3{
         font-size: 16px;
@@ -583,31 +603,24 @@ img{
     .content1 p{
         font-size: 14px;
     }
-    #menu li a{
-        margin-right: 50px;
-    }
 }
 @media (max-width: 460px){
     .center{
         padding: 75px 25px 0 60px;
     }
-    #menu li a{
-        margin-right: 50px;
+    .box1{
+        height: 300px;
+        width: 45%;
     }
 }
 
-@media(max-width: 520px){
-    #menu li a{
-        margin-right: 50px;
-    }
-}
 @media (max-width: 360px){
     .center {
         padding: 85px 25px 0 40px;
     }
     .box1{
         height: 400px;
-        width: auto;
+        width: 100%;
     }
     .content1 h3{
         font-size: 16px;
@@ -624,10 +637,6 @@ img{
     }
     .container-123{
         height: 400px;
-    }
-    #menu li a{
-        text-align: center;
-        margin-right: 32px;
     }
 }
 
@@ -688,8 +697,8 @@ img{
     }
   
     header .navigation a:hover{
-      background: #fff;
-      color: #fff;
+      background: rgba(233, 0, 19, 0.867);
+      color: #000;
       transition: 0.2s ease;
     }
   
@@ -698,8 +707,8 @@ img{
       background: url(/image/menu.png)no-repeat;
       background-size: 30px;
       background-position: center;
-      width: 40px;
-      height: 40px;
+      width: 25px;
+      height: 25px;
       right: 0;
       margin: 0 20px;
       cursor: pointer;
